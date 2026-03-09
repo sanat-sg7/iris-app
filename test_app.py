@@ -5,7 +5,7 @@ client = TestClient(app)
 
 def test_prediction():
     response = client.post("/predict", json={
-        "features": [5.1, 3.5, 1.4, 0.2]
+        "features": [6, 2.7, 4.5, 1.5]
     })
 
     assert response.status_code == 200
